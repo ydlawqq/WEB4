@@ -1,0 +1,96 @@
+/* style.css - Mobile First с Bootstrap */
+
+/* Базовые стили для мобильных устройств */
+body {
+    font-family: 'Arial', sans-serif;
+    background: white;
+}
+
+/* Логотип */
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+/* Кастомизация карточек */
+.card {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-title {
+    color: #333;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 0.5rem;
+}
+
+/* Стили для таблицы */
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Стили для формы */
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Навигация */
+nav .btn {
+    font-size: 0.875rem;
+}
+
+/* Адаптивность для очень маленьких экранов */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    header .row {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+/* Стили для десктопов (большие экраны) */
+@media (min-width: 992px) {
+    .card {
+        margin-bottom: 0;
+    }
+    
+    /* Добавляем отступы только для десктопной версии */
+    #table .card-body {
+        padding: 1.5rem;
+    }
+    
+    #form .card-body {
+        padding: 1.5rem;
+    }
+    
+    #links .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Дополнительные стили для улучшения внешнего вида */
+a:hover {
+    color: #0a58ca;
+}
+
+.table-responsive {
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+/* Специфические стили для карты изображений */
+img[usemap] {
+    border: 1px solid #ddd;
+    border-radius: 0.375rem;
+}
